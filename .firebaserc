@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angular-planets": {
+      "hosting": {
+        "starWars": [
+          "angular-planets"
+        ]
+      }
+    }
+  }
+}
