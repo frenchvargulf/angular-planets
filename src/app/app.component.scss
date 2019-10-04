@@ -1,0 +1,29 @@
+.main-cnt {
+  width: 100%;
+  min-height: 100vh;
+  color: purple;
+  text-transform: uppercase;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../assets/galaxy_starfield.png');
+}
+
+.container {
+  padding: 20px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.main-title-cnt {
+  width: 100%;
+  min-height: 100px;
+  color: dodgerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-text {
+  font-size: 50px;
+}

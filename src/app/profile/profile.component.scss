@@ -1,0 +1,14 @@
+.profile-cnt {
+    background: transparent;
+    border-radius: 15px;
+
+    li {
+        background: black;
+        border: 1px solid purple;
+        font-weight: 900;
+
+        li:first-child {
+            border-radius: 10px 10px 0 0;
+        }
+    }
+}
