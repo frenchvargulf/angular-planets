@@ -1,0 +1,29 @@
+<ul class="list-group">
+  <form class="form-inline form-cnt">
+    <input class="form-control mr-sm-2" type="search" #searchPlanet placeholder="Search planet" aria-label="Search">
+    <button type="button" class="btn btn-outline-secondary w-50" (click)="search(searchPlanet.value)"
+      class="btn btn-outline-primary my-2 my-sm-0">Search</button>
+  </form>
+
+  <div>
+    <div class="page-cnt">Pages</div>
+    <button type="button" class="btn btn-outline-secondary w-10" (click)="getPage(item)"
+      *ngFor="let item of pageIfItems">{{item}}</button>
+  </div>
+
+  <div class="size-cnt">
+    <div>Size</div>
+    <button type="button" class="btn btn-outline-secondary w-10" (click)="show(5)">5</button>
+    <button type="button" class="btn btn-outline-secondary w-10" (click)="show(10)">10</button>
+  </div>
+
+  <div *ngIf='mock'>
+    <app-menu-elem *ngFor="let character of fighters" [character]="character">
+    </app-menu-elem>
+  </div>
+
+  <div *ngIf="!mock">
+    <app-menu-elem *ngFor="let character of (characters$ | async )" [character]="character">
+    </app-menu-elem>
+  </div>
+</ul>
