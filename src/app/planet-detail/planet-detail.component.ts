@@ -29,7 +29,6 @@ export class PlanetDetailComponent implements OnInit {
       planet.map(planet => {
         // @ts-ignore
         if (planet1 === planet.name) {
-          console.log(planet);
           this.planet = planet;
           return planet;
         }

@@ -49,7 +49,6 @@ export class PaginationComponent implements OnInit {
 
   getPlanets1(url): void {
     this.apiService.getPlanets(url).subscribe(planets => {
-      console.log(this.dataAPI);
       this.dataAPI.push(planets);
 
       if (this.dataAPI.length == 7) {
@@ -58,7 +57,6 @@ export class PaginationComponent implements OnInit {
             this.allPlanets.push(result);
           });
         });
-        console.log(this.allPlanets);
       }
 
       if (this.allPlanets.length == 61) {
