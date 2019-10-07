@@ -18,16 +18,44 @@ export class PlanetsAPIService {
 
   constructor(private http: HttpClient) { }
 
+  // getAllPlanets() {
+  //   console.log("duupa")
+  //   console.log(this.url)
+  //   let data = [];
 
-      // /* GET heroes whose name contains search term */
+  //     return this.http.get<string>(this.url).pipe(
+  //       map(res => {
+  //         console.log(res)
+  //       })
+  //     )
+
+
+  //   // this.url.map( (url) => {
+  //   //   this.http.get<any>(url).pipe(
+  //   //     map(res => {
+  //   //      console.log(res);
+  //   //     }),
+      
+  //   //   )
+  
+  //   // })
+    
+  // }
+      /* GET heroes whose name contains search term */
       searchPlanets(term: string): Observable<Planet[]> {
         if (!term.trim()) {
+          // if not search term, return empty hero array.
           return null;
         }
         console.log(term)
         return this.http.get<Planet[]>(`${this.searchUlr}/?search=${term}`).pipe(
+          // tap(_ => this.log(`found heroes matching "${term}"`)),
+          // catchError(this.handleError<Hero[]>('searchHeroes', []))
           map(res => {
             // @ts-ignore
+            //   this.searchResult = res.results;
+            //  // @ts-ignore
+            //   this.isLoaded = !this.isLoaded;
               return res.results;
           }),
         
@@ -38,8 +66,13 @@ export class PlanetsAPIService {
     searchOnePlanet(term: string){
       console.log(term)
       return this.http.get<Planet[]>(`${this.searchUlr}/?search=${term}`).pipe(
+        // tap(_ => this.log(`found heroes matching "${term}"`)),
+        // catchError(this.handleError<Hero[]>('searchHeroes', []))
         map(res => {
           // @ts-ignore
+          //   this.searchResult = res.results;
+          //  // @ts-ignore
+          //   this.isLoaded = !this.isLoaded;
             return res.results;
         }),
       
@@ -48,6 +81,24 @@ export class PlanetsAPIService {
 
 
   getPlanets(url): Observable<Planet[]> {
+  //   let data;
+  //   console.log('afaf')
+  //   // this.url.map( (url) => {
+  //   //   console.log(url)
+  //     return this.http.get<any>(this.url[0]).pipe(
+  //       map(res => {
+  //         console.log(res);
+  //         return res.results;
+  //         // data.push(res.results)
+  //         // return res.results
+  //       })
+  //     )
+  //   // })
+
+
+  // return data;
+  // this.url.map( (url) => {
+    
     return this.http.get<any>(url).pipe(
       map(res => {
         this.planets = res;
@@ -56,6 +107,10 @@ export class PlanetsAPIService {
     
     )
 
+    
+
+    
+  // })
 
 }
 

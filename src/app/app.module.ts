@@ -8,9 +8,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { PaginationComponent } from './pagination/pagination.component';
 import { HttpClientModule }    from '@angular/common/http';
 import { PlanetSearchComponent } from './planet-search/planet-search.component';
+// import { MdCardModule, MdInputModule } from '@angular/material';
 
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [

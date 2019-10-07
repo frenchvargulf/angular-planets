@@ -1,0 +1,17 @@
+.profile-cnt{
+    color: purple;
+    background: transparent;
+    min-width: 150px;
+}
+
+.list-group-item {
+    color: purple;
+    border: 1px solid rgb(90, 83, 83, 0.35);
+    background: transparent;
+}
+
+svg {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+}
