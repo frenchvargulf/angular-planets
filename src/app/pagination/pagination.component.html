@@ -19,7 +19,7 @@
         *ngFor="let planet of planets | slice: (pageEvent.pageIndex)*pageEvent.pageSize : (pageEvent.pageIndex)*pageEvent.pageSize+pageEvent.pageSize">
         <!-- <li *ngFor="let planet of planets | angularPaginator: { currentPage: currentPage }; let i = index"> -->
         <a [routerLink]="['/planet', planet.name]" class="col-1-4">
-          <h4 class="module planet">{{ planet.name }}</h4>
+          <p class="module planet">{{ planet.name }}</p>
         </a>
       </div>
     </div>
@@ -31,7 +31,7 @@
         *ngFor="let planet of allPlanets | slice: (pageEvent.pageIndex)*pageEvent.pageSize : (pageEvent.pageIndex)*pageEvent.pageSize+pageEvent.pageSize">
         <!-- <li *ngFor="let planet of planets | angularPaginator: { currentPage: currentPage }; let i = index"> -->
         <a [routerLink]="['/planet', planet.name]" class="col-1-4">
-          <h4 class="module planet">{{ planet.name }}</h4>
+          <p class="module planet">{{ planet.name }}</p>
         </a>
       </div>
     </div>

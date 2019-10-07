@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/angular-planets",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
