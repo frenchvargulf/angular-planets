@@ -1,9 +1,5 @@
-import { Injectable } from '@angular/core';
+import { Planet } from './planet';
 
-@Injectable({
-  providedIn: 'root'
-})
-export class MockPlanetsService {
-
-  constructor() { }
-}
+import * as data from './dummy_data.json';
+// @ts-ignore
+export const PLANETS: Planet[] = data.default;

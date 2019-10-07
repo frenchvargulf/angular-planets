@@ -1,1 +1,22 @@
-<p>planet-search works!</p>
+<div id="search-component">
+  <input #searchBox id="search-box" placeholder="Search for Planets" (input)="search(searchBox.value)" />
+
+  <div class="search-result">
+    <div *ngIf="mock" class="search-div">
+      <div *ngFor="let planet of planets$ | async" class="cnt-div">
+        <a class="module-planet" routerLink="/planet/{{planet.name}}">
+          {{planet.name}}
+        </a>
+      </div>
+    </div>
+
+    <div *ngIf="mock" class="">
+      <div *ngFor="let planet of results$ | async" class="">
+        <a class="module-planet" routerLink="/planet/{{planet.name}}">
+          {{planet.name}}
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
