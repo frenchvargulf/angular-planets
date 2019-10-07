@@ -1,5 +1,4 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { PlanetSearchComponent } from './planet-search.component';
 
 describe('PlanetSearchComponent', () => {

@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { MockPlanetsService } from './mock-planets.service';
+import { PlanetService } from './planet.service';
 
-describe('MockPlanetsService', () => {
+describe('PlanetService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: MockPlanetsService = TestBed.get(MockPlanetsService);
+    const service: PlanetService = TestBed.get(PlanetService);
     expect(service).toBeTruthy();
   });
 });
