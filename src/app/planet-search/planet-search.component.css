@@ -1,0 +1,40 @@
+#search-box {
+  background: transparent;
+  width: 100%;
+  border: 1px solid dodgerblue;
+  padding: 20px;
+  border-radius: 15px;
+  color: dodgerblue;
+  outline: none;
+  margin: 10px 0;
+}
+
+.search-result {
+  width: 100%;
+}
+
+.search-div {
+  width: 100%;
+}
+
+.cnt-div {
+  width: 100%;
+}
+.module-planet {
+  display: block;
+  margin: 10px 0;
+  background-color: purple;
+  width: 100%;
+  padding: 20px 0;
+  padding-left: 5px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 900;
+  text-transform: uppercase;
+  transition: .8s all ease-in-out;
+}
+
+.module-planet:hover{
+  text-decoration: none;
+  background-color: dodgerblue;
+}
